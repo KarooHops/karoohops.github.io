@@ -151,6 +151,7 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 
 footer{border-top:1px solid var(--line);padding:24px 0 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;color:var(--muted);font-size:14px}
 footer nav{gap:18px}
+.nw{white-space:nowrap}
 footer a{color:var(--muted);text-decoration:none;font-weight:600}
 footer a:hover{color:var(--ink)}
 
@@ -172,6 +173,8 @@ footer a:hover{color:var(--ink)}
   .ex{padding:24px 20px}
   .ex-name{font-size:30px}
   .panel{padding:22px 18px}
+  .legal .dot{display:none}
+  .legal .nw{display:block}
   .phone{width:230px}
 }
 </style>
@@ -345,7 +348,7 @@ footer a:hover{color:var(--ink)}
 
 <div class="wrap">
 <footer>
-  <span>&copy; 2026 KarooHops &#183; Highlands Ranch, Colorado</span>
+  <span class="legal"><span class="nw">&copy; 2026 KarooHops LLC</span><span class="dot" aria-hidden="true"> &#183; </span><span class="nw">Highlands Ranch, Colorado</span></span>
   <nav aria-label="Examples"><a href="/snowhop/">SnowHop</a><a href="/shophop-site/">ShopHop</a></nav>
 </footer>
 </div>
