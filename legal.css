@@ -1,0 +1,52 @@
+/* Shared look for karoohops.com/terms/ and /privacy/, matching the home page. */
+:root{
+  --ink:#13202C; --muted:#56626F; --line:#DEE4EB; --white:#FFFFFF;
+  --accent:#C2410C; --accent-dark:#9A3412; --tint:#FFF3EA;
+  --display:Outfit,"Avenir Next","Trebuchet MS",sans-serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--body);font-size:16px;line-height:1.6;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a[href^="mailto:"]{font-weight:600;overflow-wrap:anywhere}
+a:focus-visible{outline:3px solid #F59E0B;outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+header{border-bottom:1px solid var(--line);background:var(--white)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.logo{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.3px;text-decoration:none}
+.logo span{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 18px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;background:var(--accent);color:#fff;white-space:nowrap}
+.btn:hover{background:var(--accent-dark)}
+
+.doc{max-width:720px;margin:0 auto;padding:48px 20px 64px}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:2.5px;color:var(--accent)}
+h1,h2{font-family:var(--display);margin:0}
+h1{font-weight:800;font-size:clamp(36px,5.5vw,48px);line-height:1.05;letter-spacing:-1px;margin-top:12px}
+.sub{margin:14px 0 0;font-size:18px;color:var(--muted);text-wrap:pretty}
+.date{margin:6px 0 0;font-size:14px;color:var(--muted)}
+
+.short{margin:28px 0 8px;padding:20px 22px 22px;border-radius:18px;background:var(--tint)}
+.short h2{font-weight:700;font-size:18px;letter-spacing:-.2px}
+.short .note{font-size:14px;color:var(--muted)}
+
+.doc section h2{font-weight:700;font-size:22px;letter-spacing:-.3px;line-height:1.25;margin-top:36px;scroll-margin-top:16px}
+.doc p{margin:10px 0 0;text-wrap:pretty}
+.doc ul{margin:10px 0 0;padding-left:22px}
+.doc li{margin-top:6px;text-wrap:pretty}
+.doc li::marker{color:var(--accent)}
+.doc strong{font-weight:600}
+.doc .sign{margin-top:28px;color:var(--muted);font-size:15px}
+
+footer{border-top:1px solid var(--line);padding:24px 0 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;color:var(--muted);font-size:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+.nw{white-space:nowrap}
+footer a{color:var(--muted);text-decoration:none;font-weight:600}
+footer a:hover,footer a[aria-current="page"]{color:var(--ink)}
+
+@media (max-width:560px){
+  .doc{padding-top:36px}
+  .short{padding:18px 18px 20px}
+  .legal .dot{display:none}
+  .legal .nw{display:block}
+}

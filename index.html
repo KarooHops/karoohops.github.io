@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KarooHops · Websites and apps for service businesses</title>
-<meta name="description" content="KarooHops builds service businesses a website where customers book, pay and manage their visits. $29 a month with support included. Custom iPhone apps from $500.">
+<meta name="description" content="KarooHops builds service businesses a website where customers book, pay and manage their visits. $29 a month for our first 10 businesses, support included. Custom iPhone apps from $500.">
 <meta name="theme-color" content="#13202C">
 <meta property="og:title" content="KarooHops · Websites and apps for service businesses">
-<meta property="og:description" content="A website that takes bookings and gets you paid. $29 a month, support included. Custom apps from $500.">
+<meta property="og:description" content="A website that takes bookings and gets you paid. $29 a month for our first 10 businesses, support included. Custom apps from $500.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://karoohops.com/">
 <meta property="og:image" content="https://karoohops.com/og.png">
@@ -102,6 +102,9 @@ nav .btn{min-height:42px;padding:0 18px;font-size:15px}
 .plan{border:1px solid var(--line);border-radius:24px;padding:28px 24px;display:flex;flex-direction:column;gap:12px;background:var(--white)}
 .plan.best{border:2px solid var(--accent);box-shadow:0 16px 40px rgba(194,65,12,.12)}
 .plan h3{font-size:21px}
+.plan-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px}
+.badge{font-family:var(--display);font-weight:700;font-size:11.5px;letter-spacing:1.5px;line-height:1;padding:6px 10px;border-radius:999px;background:var(--tint);color:var(--accent-dark);white-space:nowrap}
+.plan p.deal{color:var(--ink);font-weight:600;font-size:15px;text-wrap:pretty}
 .price{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;letter-spacing:-1px}
 .price small{font-family:var(--body);font-size:16px;font-weight:600;color:var(--muted);letter-spacing:0}
 .plan p{margin:0;color:var(--muted);font-size:15.5px}
@@ -145,6 +148,8 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 .form-err{margin:14px 0 0;color:#B42318;font-weight:600;font-size:15px}
 .send-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:18px}
 .send-row .small{font-size:13.5px;color:var(--muted)}
+.form-note{margin:14px 0 0;font-size:13.5px;color:var(--muted);text-wrap:pretty}
+.form-note a,.fine a{font-weight:600;color:var(--ink)}
 .done:focus,.done h3:focus{outline:none}
 .done h3{font-size:26px}
 .done p{margin:8px 0 0;color:var(--muted)}
@@ -198,7 +203,7 @@ footer a:hover{color:var(--ink)}
     <div>
       <div class="eyebrow">WEBSITES AND APPS FOR SERVICE BUSINESSES</div>
       <h1>A website that takes bookings and gets you paid.</h1>
-      <p class="lede">KarooHops gives your service business its own website where customers book, pay and manage their visits, and you run it all from your phone. $29 a month, support included.</p>
+      <p class="lede">KarooHops gives your service business its own website where customers book, pay and manage their visits, and you run it all from your phone. $29 a month for our first 10 businesses, support included.</p>
       <div class="hero-ctas">
         <a class="btn btn-main" href="#start">Get started</a>
         <a class="btn btn-line" href="/snowhop/">Try the demo</a>
@@ -262,8 +267,9 @@ footer a:hover{color:var(--ink)}
     <h2>Simple pricing.</h2>
     <div class="pgrid">
       <div class="plan best">
-        <h3>Website</h3>
+        <div class="plan-head"><h3>Website</h3><span class="badge">FOUNDING PRICE</span></div>
         <div class="price">$29 <small>a month</small></div>
+        <p class="deal">For our first 10 businesses, locked in for as long as you stay. $49 a month after that.</p>
         <p>We build your booking website, keep it running, and support your business.</p>
         <ul>
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Online booking and customer accounts</li>
@@ -271,19 +277,20 @@ footer a:hover{color:var(--ink)}
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Owner page and instant alerts</li>
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>On your own web address, or at karoohops.com/yourbusiness</li>
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Support from Ethan by call, text or email</li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free setup, live within a week, cancel anytime</li>
         </ul>
-        <a class="btn btn-main" href="#start" data-need="website">Get started</a>
+        <a class="btn btn-main" href="#start" data-need="website">Claim a founding spot</a>
       </div>
       <div class="plan">
         <h3>Already have a website?</h3>
-        <div class="price">Quote</div>
-        <p>We add KarooHops booking and payments to the website you already have. Tell us about it and we&#39;ll send you a price.</p>
+        <div class="price">$199 <small>and up, one time</small></div>
+        <p>We connect KarooHops booking and payments to the website you already have, and it runs on the monthly plan from there. Tell us about your site and we&#39;ll send you an exact price.</p>
         <a class="btn btn-line" href="#start" data-need="existing">Request a quote</a>
       </div>
       <div class="plan">
         <h3>Custom app</h3>
         <div class="price">$500 <small>to build</small></div>
-        <p>Your own iPhone app, built for your business.</p>
+        <p>Your own iPhone app, built for your business and published on your own Apple developer account ($99 a year, paid to Apple).</p>
         <div class="speed">
           <div><span>Standard, ready in 2&#8211;3 weeks</span><b>$500</b></div>
           <div><span>Priority, ready in 2 weeks</span><b>$1,000</b></div>
@@ -291,7 +298,7 @@ footer a:hover{color:var(--ink)}
         <a class="btn btn-line" href="#start" data-need="app">Start an app</a>
       </div>
     </div>
-    <p class="fine">Online payments run through Stripe, and Stripe&#39;s standard processing fees apply.</p>
+    <p class="fine">Your customers pay you directly through your own Stripe account, and Stripe&#39;s standard processing fees apply. The details are in our <a href="/terms/">Terms of Service</a>.</p>
   </div>
 </section>
 
@@ -326,7 +333,7 @@ footer a:hover{color:var(--ink)}
             <legend class="legend">What do you need?</legend>
             <div class="needs">
               <label class="need"><input type="radio" name="need" value="website"><span>Website &#183; $29/month</span></label>
-              <label class="need"><input type="radio" name="need" value="existing"><span>Add to my website &#183; quote</span></label>
+              <label class="need"><input type="radio" name="need" value="existing"><span>Add to my website &#183; from $199</span></label>
               <label class="need"><input type="radio" name="need" value="app"><span>App &#183; $500</span></label>
               <label class="need"><input type="radio" name="need" value="app_priority"><span>Priority app &#183; $1,000</span></label>
               <label class="need"><input type="radio" name="need" value="unsure"><span>Not sure yet</span></label>
@@ -340,6 +347,7 @@ footer a:hover{color:var(--ink)}
           <button class="btn btn-main" type="submit" id="sendBtn">Send</button>
           <span class="small">Add a phone number or an email so Ethan can reach you.</span>
         </div>
+        <p class="form-note">We only use what you send here to get back to you. See our <a href="/privacy/">Privacy Policy</a>.</p>
       </form>
     </div>
   </div>
@@ -349,7 +357,7 @@ footer a:hover{color:var(--ink)}
 <div class="wrap">
 <footer>
   <span class="legal"><span class="nw">&copy; 2026 KarooHops LLC</span><span class="dot" aria-hidden="true"> &#183; </span><span class="nw">Highlands Ranch, Colorado</span></span>
-  <nav aria-label="Examples"><a href="/snowhop/">SnowHop</a><a href="/shophop-site/">ShopHop</a></nav>
+  <nav aria-label="More from KarooHops"><a href="/snowhop/">SnowHop</a><a href="/shophop-site/">ShopHop</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a></nav>
 </footer>
 </div>
 
