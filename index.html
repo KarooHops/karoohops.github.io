@@ -49,7 +49,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 /* header */
 header{border-bottom:1px solid var(--line);background:var(--white)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
-.logo{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.3px;text-decoration:none}
+.logo{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.3px;text-decoration:none}
+.logo .mark{display:block;height:34px;width:auto;flex:none}
+.logo .wm{color:inherit}
 .logo span{color:var(--accent)}
 nav{display:flex;align-items:center;gap:26px}
 nav a.plain{text-decoration:none;font-weight:600;font-size:15px;color:var(--muted)}
@@ -187,7 +189,7 @@ footer a:hover{color:var(--ink)}
 <body>
 <header>
   <div class="wrap bar">
-    <a class="logo" href="/">Karoo<span>Hops</span></a>
+    <a class="logo" href="/"><img class="mark" src="/karoo-mark.svg" alt="" width="25" height="34"><span class="wm">Karoo<span>Hops</span></span></a>
     <nav aria-label="Main">
       <a class="plain" href="#features">Features</a>
       <a class="plain" href="#examples">Examples</a>
